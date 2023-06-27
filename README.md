@@ -2,7 +2,7 @@
 
 To comprehend the concept of Mac Changer, it is necessary to first grasp the meaning of a Mac Address. A Mac Address consists of six prefixes, where the initial three prefixes represent the ````manufacturer's address```` and the subsequent three prefixes signify the ````device ID.````
 
-To accomplish this, we have compiled a list of all the manufacturing addresses, which has been stored in a text file named 'maclist.txt'.
+To accomplish this, we have compiled a list of all the manufacturing addresses, which has been stored in a text file named 'maclist.txt'https://github.com/Shivam7679/Random-Mac-Address-Generator/blob/9001947d268f27ef1d840003476da10db62da524/maclist.txt.
 Below is the code snippet for generating the list of all manufacturing address:
 ````
 $ macchanger -l > maclist.txt  
