@@ -1,4 +1,4 @@
-# Mac-Address-Chnager
+# Mac-Address-Generator(Random)
 
 To comprehend the concept of Mac Changer, it is necessary to first grasp the meaning of a Mac Address. A Mac Address consists of six prefixes, where the initial three prefixes represent the '''manufacturer's address''' and the subsequent three prefixes signify the '''device ID.'''
 
