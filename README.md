@@ -7,9 +7,10 @@ Below is the code snippet for generating the list of all manufacturing address:
 ````
 $ macchanger -l > maclist.txt  
 ````
-NOw, let us understand with the help of one example: 14296 - 3c:e0:72 - Apple
+The above command generates a lisg list of different manufacturing addresses. But we only require only one line so we will ise ```-n 1``` which reffers to slicing of a line at a time.
+Now, let us understand with the help of one example: 14296 - 3c:e0:72 - Apple.  
 Here, we only need the third column i.e, 3c:e0:72
-We, get this using the following code snipet with the help of ```awk``` command and ```shuf``` reffering to shuffeling everytime we run the command:
+We would get this using the following code snipet with the help of ```awk``` command and ```shuf``` reffering to shuffeling everytime we run the command:
 ````
 shuf -n 1 maclist.txt | awk '{print $3}'  
 ````
