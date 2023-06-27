@@ -19,8 +19,8 @@ Below is the code snippet:
 ````
 printf '%02x:%02x:%02x' $[RANDOM%256] $[RANDOM%256] $[RANDOM%256]
 ````
-Lastly, we need to know the type of connection your system is having. in this case it is ```eth0```  
-Now that we have both sets of prefixes and the connection type, we can simply combine them, ensuring that the manufacturer's address precedes the device ID followed up by the connection type..
+Lastly, we need to know the type of network interface your system is having, in this case it is ```eth0```  
+Now that we have both sets of prefixes and the connection type, we can simply combine them, ensuring that the manufacturer's address precedes the device ID followed up by the network interface.
 Below is the code of adding both the codes:
 ````
 macchanger -m "$(shuf -n 1 maclist.txt | awk '{print$3}'):$(printf '%02x:%02x:%02x' $[RANDOM%256] $[RANDOM%256] $[RANDOM%256])" eth0
